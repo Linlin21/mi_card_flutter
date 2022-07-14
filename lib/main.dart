@@ -11,7 +11,35 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body:SafeArea(
-          child: Row(
+          child: Column(
+            children: <Widget> [
+              CircleAvatar(
+                radius: 100.0,
+                backgroundImage: AssetImage('assets/screenshot_2.jpg'),
+              ),
+              Text(
+                'Pelin Su Akkoç',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+
+
+
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+
+/*
+Row(
             //crossAxisAlignment: CrossAxisAlignment.stretch,
             //mainAxisAlignment: MainAxisAlignment.center ,
             // çok fazla var bak, crossAxiss
@@ -59,10 +87,5 @@ class MyApp extends StatelessWidget {
               ),
 
             ],
-          )
-        ),
-      )
-    );
-  }
-}
-
+          ),
+ */
