@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'miCard',
+      title: 'miiiCard',
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: Container(
