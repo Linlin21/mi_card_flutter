@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'miCard',
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue.shade200,
         body:SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget> [
               CircleAvatar(
                 radius: 100.0,
@@ -20,12 +21,74 @@ class MyApp extends StatelessWidget {
               Text(
                 'Pelin Su Akkoç',
                 style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
                   fontSize: 40.0,
                   color: Colors.white,
+                  //fontWeight: FontWeight.bold,
+                ),
+
+              ),
+              Text(
+                'Computer Engineering Student',
+                style: TextStyle(
+                  //fontFamily: Dancing Script,
+                  fontSize: 20.0,
+                  //color: Colors.pinkAccent.shade700,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5,
+
                 ),
 
 
+
+
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 300.0,
+                child: Divider(
+                  color: Colors.white,
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 50.0,
+                    color: Colors.blue.shade200,
+                  ),
+                  title: Text(
+                    '+905433577094',
+                    style: TextStyle(
+                      color: Colors.black,
+
+                    ),
+                  ),
+                ),
+
+
+              ),
+
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 50.0,
+                    color: Colors.blue.shade200,
+                  ),
+                  title: Text(
+                    'pelinsuakkoc@gmail.com',
+                    style: TextStyle(
+                      color: Colors.black,
+
+                    ),
+                  ),
+                ),
 
               ),
             ],

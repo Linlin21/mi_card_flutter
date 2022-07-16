@@ -39,6 +39,16 @@ flutter:
   assets:
     - assets/screenshot_2.jpg
 
+  fonts:
+    - family: Dancing Script
+      fonts:
+        - asset: fonts/DancingScript-Medium.ttf
+
+    - family: Source Sans Pro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
